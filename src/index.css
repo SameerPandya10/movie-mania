@@ -56,7 +56,7 @@ body {
   background-color: var(--color-background-500);
   border-radius: 0.9rem;
   /* overflow: auto; */
-  overflow: hidden;
+  overflow: auto;
   position: relative;
 }
 
