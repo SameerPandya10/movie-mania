@@ -47,7 +47,7 @@ export default function App() {
           setIsLoading(true);
           setError("");
           const res = await fetch(
-            `http://www.omdbapi.com/?apikey=${KEY}&s=${query}`,
+            `https://www.omdbapi.com/?apikey=${KEY}&s=${query}`,
             { signal: controller.signal }
           );
           if (!res.ok)
@@ -224,7 +224,7 @@ function MovieDetails({
           setIsLoading(true);
           setError("");
           const res = await fetch(
-            `http://www.omdbapi.com/?apikey=${KEY}&i=${selectedID}`
+            `https://www.omdbapi.com/?apikey=${KEY}&i=${selectedID}`
           );
           if (!res.ok)
             throw new Error(
